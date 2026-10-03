@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="am">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>የቤላ ጤና ጣቢያ - የአይቲ ክፍል አመታዊ የስራ እቅድ</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Ethiopic:wght@400;600;700&display=swap');
+
+        @page {
+            size: A4;
+            margin: 20mm;
+        }
+
+        :root {
+            --primary: #1e3a8a; /* Navy Blue */
+            --primary-light: #eff6ff;
+            --secondary: #0d9488; /* Teal Accent */
+            --text: #1f2937;
+            --border: #e5e7eb;
+        }
+
+        body {
+            font-family: 'Noto Sans Ethiopic', sans-serif;
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+        }
+
+        .page-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #ffffff;
+            padding: 40px 50px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        /* Header Styling */
+        .document-header {
+            text-align: center;
+            border-bottom: 3px solid var(--primary);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .document-header h1 {
+            color: var(--primary);
+            font-size: 24px;
+            margin: 0 0 10px 0;
+            font-weight: 700;
+        }
+
+        .document-header h2 {
+            color: var(--secondary);
+            font-size: 18px;
+            margin: 0;
+            font-weight: 600;
+        }
+
+        /* Section Headings */
+        h2.section-title {
+            color: var(--primary);
+            border-left: 5px solid var(--secondary);
+            padding-left: 12px;
+            font-size: 18px;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            background: var(--primary-light);
+            padding-top: 6px;
+            padding-bottom: 6px;
+        }
+
+        h3.subsection-title {
+            color: var(--secondary);
+            font-size: 15px;
+            margin-top: 20px;
+            margin-bottom: 8px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 4px;
+        }
+
+        p, li {
+            font-size: 13.5px;
+            color: #374151;
+            text-align: justify;
+        }
+
+        ul, ol {
+            padding-left: 20px;
+            margin-top: 5px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        /* Highlight Boxes */
+        .callout-box {
+            background-color: #f8fafc;
+            border: 1px solid #cbd5e1;
+            border-left: 4px solid var(--primary);
+            padding: 15px;
+            border-radius: 4px;
+            margin: 15px 0;
+            font-size: 13px;
+        }
+
+        /* Tables Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            margin-bottom: 25px;
+            font-size: 12.5px;
+        }
+
+        th, td {
+            border: 1px solid var(--border);
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: var(--primary);
+            color: white;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        td.center {
+            text-align: center;
+            font-weight: bold;
+            color: var(--secondary);
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+
+        /* Signoff Block */
+        .approval-section {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px dashed var(--border);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .signature-box {
+            width: 45%;
+            background: #fafafa;
+            padding: 15px;
+            border-radius: 6px;
+            border: 1px solid var(--border);
+            font-size: 13px;
+        }
+
+        .signature-box h4 {
+            margin-top: 0;
+            color: var(--primary);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 5px;
+        }
+
+        .line {
+            margin-top: 25px;
+            border-bottom: 1px dotted #6b7280;
+        }
+
+        /* Print Media Adjustments */
+        @media print {
+            body {
+                background-color: #ffffff;
+            }
+            .page-container {
+                box-shadow: none;
+                padding: 0;
+                margin: 0;
+                max-width: 100%;
+            }
+            .approval-section {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="page-container">
+
+    <!-- Header -->
+    <div class="document-header">
+        <h1>ቤላ ጤና ጣቢያ</h1>
+        <h2>የአይቲ እና መረጃ አስተዳደር ክፍል አመታዊ ስትራቴጂካዊ የስራ እቅድ ሰነድ</h2>
+    </div>
+
+    <!-- Section 1 -->
+    <h2 class="section-title">1. ማጠቃለያ እና መግቢያ</h2>
+    
+    <h3 class="subsection-title">1.1 ማጠቃለያ (Executive Summary)</h3>
+    <p>ይህ አመታዊ የስራ እቅድ የቤላ ጤና ጣቢያን አጠቃላይ የህክምና፣ የአስተዳደር፣ የፋይናንስ፣ የንብረት፣ የሰው ሀብት፣ የዳታ/HMIS እና የምርመራ/ክትባት ክፍሎች በዲጂታል ቴክኖሎጂ ለመደገፍ የተዘጋጀ ሰነድ ነው። እቅዱ በዋናነት የመረጃ መረጋጋትን፣ የሰርቨር እና የኔትወርክ አስተማማኝነትን፣ የኤሌክትሮኒክስ ህክምና መረጃ ስርዓትን (EMR/HIS)፣ የፋይናንስ አስተዳደር ሲስተሞችን (IBEX እና iTAP)፣ የፋርማሲ ቁጥጥር ሲስተም (DAGU)፣ የንብረት አስተዳደር portal (AMIS)፣ የሰው ሀብት መረጃ ሲስተም (HRIS/eHRIS)፣ የጤና ዳታ አስተዳደር ሲስተም (DHIS2)፣ የክትባት ክፍል ዲጂታል ሲስተም (EIR / Immunization System)፣ እንዲሁም አጠቃላይ የግቢውን ኢንተርኔት እና ዋይፋይ (Campus-Wide Wi-Fi & Internet) መሠረተ-ልማት ማስተዳደርን አጠቃሎ ይዟል።</p>
+
+    <h3 class="subsection-title">1.2 መግቢያ (Introduction)</h3>
+    <p>በጤናው ዘርፍ የሚደረገው የዲጂታል ትራንስፎርሜሽን (Digital Health Transformation) የመልካም አስተዳደር፣ የውሳኔ አሰጣጥ እና የጥራት መለኪያ ሆኗል። በጤና ጣቢያችን የሚሰጡ የህክምና፣ የክትባት፣ የመድኃኒት፣ የንብረት እና የፋይናንስ አገልግሎቶች ሁሉ በዲጂታል ሲስተም መደገፋቸው የወረቀት አሰራርን (Manual System) ያስቀራል፤ አገልግሎትን ያፋጥናል፤ የመረጃ ስህተቶችንም ይከላከላል።</p>
+    <p>ለዚህም ስራ በጤና ጣቢያው የተዘረጉትን ውስብስብ የኔትወርክ መሰረተ-ልማቶች (Cat6 cabling, Cisco Switches, D-Link/Ubiquiti Wireless Access Points)፣ የሰርቨር አደረጃጀቶች (HPE ProLiant ML350 Gen10 Server) እና የተለያዩ የመረጃ ስርዓቶችን በተቀናጀ መልኩ ማስተዳደር ያስፈልጋል።</p>
+    <p>ይህ አመታዊ እቅድ የመሰረተ-ልማት ጥገናዎችን እና የሲስተም ዝመናዎችን ብቻ ሳይሆን፣ የህክምና መረጃዎችን ምስጢራዊነትጠበቅን፣ የሳይበር ደህንነት ስጋቶችን መከላከልን፣ የ CCTV ካሜራዎች ቁጥጥርን እና ሰራተኞች በየጊዜው በሚወጡ አዳዲስ የቴክኖሎጂ አሰራሮች (DHIS2, AMIS, HRIS, EIR) ላይ ብቁ እንዲሆኑ ተከታታይ የስራ ላይ ስልጠናዎችን መስጠትን አጠቃሎ የያዘ መመሪያ ሰነድ ነው።</p>
+
+    <!-- Section 2 -->
+    <h2 class="section-title">2. የተቋሙ ራዕይ፣ ተልዕኮ፣ እሴቶች እና የእቅዱ ዓላማ</h2>
+    
+    <div class="callout-box">
+        <strong>ራዕይ (Vision):</strong> በዘመናዊ የኢንፎርሜሽን ቴክኖሎጂ የተደገፈ፣ የተቀናጀ፣ ደህንነቱ የተጠበቀ እና አርአያነት ያለው የህክምና፣ የፋይናንስ እና የአስተዳደር ዲጂታል አገልግሎት የሚሰጥ የጤና ጣቢያ መሆን።<br><br>
+        <strong>ተልዕኮ (Mission):</strong> የላቁ የመረጃና ኮሙኒኬሽን ቴክኖሎጂዎችን በመተግበር የህክምና፣ የፋይናንስ፣ የንብረት፣ የሰው ሀብት እና የክትባት መረጃዎችን በብቃት ማደራጀት፤ የሰርቨር፣ የኔትወርክ እና የኢንተርኔት መሠረተ-ልማቶችን ሳያቋርጡ ስራ ላይ ማዋል፤ እና ሰራተኞችን በስልጠና በመደገፍ ቀልጣፋ የአገልግሎት वातावरण መፍጠር።
+    </div>
+
+    <h3 class="subsection-title">2.3 እሴቶች (Core Values)</h3>
+    <ul>
+        <li><strong>የመረጃ ታማኝነት እና ደህንነት (Data Integrity & Confidentiality):</strong> የህመምተኞችን እና የተቋሙን ምስጢራዊ መረጃዎች በጥብቅ ደህንነት መጠበቅ።</li>
+        <li><strong>አስተማማኝነት እና ዝግጁነት (High Availability & Reliability):</strong> 24/7 የማይቋረጥ የኔትወርክ፣ የኢንተርኔት/ዋይፋይ፣ የሰርቨር እና የሲስተም አገልግሎት ማረጋገጥ።</li>
+        <li><strong>ተስፋፊነት እና ዘመናዊነት (Innovation & Scalability):</strong> አዳዲስ የቴክኖሎጂ አሰራሮችን በመተግበር አሰራርን ቀጣይነት ባለው መልኩ ማዘመን።</li>
+        <li><strong>ቅልጥፍና እና ደንበኛ ተኮርነት (Responsiveness & Accountability):</strong> ለውስጥና ለውጭ ተገልጋዮች ፈጣን የቴክኒክ ድጋፍና ምላሽ መስጠት።</li>
+    </ul>
+
+    <h3 class="subsection-title">2.4 የእቅዱ ዓላማ (General & Specific Objectives)</h3>
+    <p><strong>ዋና ዓላማ:</strong> የቤላ ጤና ጣቢያን አጠቃላይ የህክምና፣ የክትባት፣ የፋይናንስ፣ የፋርማሲ፣ የንብረት፣ የሰው ሀብት እና የHMIS/ዳታ ስራዎች በዲጂታል ቴክኖሎጂ በማቀናጀት የሲስተም ማቋረጥ (Downtime) ሳይኖር፣ የመረጃ ደህንነቱ የተጠበቀ፣ ፈጣን እና ጥራት ያለው የጤና አገልግሎት ለህብረተሰቡ ማቅረብ ነው።</p>
+    <p><strong>ዝርዝር ዓላማዎች:</strong></p>
+    <ol>
+        <li>የኤሌክትሮኒክስ ህክምና መረጃ ስርዓትን (EMR) ሙሉ በሙሉ ማቀናጀት (የካርድ ክፍል፣ የህክምና ክፍሎች፣ ላቦራቶሪ፣ አልትራሳውንድ፣ ፋርማሲ፣ ክፍያ ቦታዎች እና ድንገተኛ ክፍል)።</li>
+        <li>የፋይናንስ (IBEX, iTAP)፣ የንብረት (AMIS) እና የሰው ሀብት (eHRIS) ሲስተሞችን ማጠናከር።</li>
+        <li>የዳታ/HMIS (DHIS2) እና የክትባት ክፍል ሲስተሞችን (EIR) መደገፍ።</li>
+        <li>የመሰረተ-ልማት፣ የኢንተርኔት እና የዋይፋይ ተዳራሽነትን ማረጋገጥ እንዲሁም የ HPE ProLiant Gen10 ሰርቨርን ደህንነት መጠበቅ።</li>
+        <li>የሰው ኃይል ዲጂታል ክህሎት ማሳደግ (Capacity Building)።</li>
+    </ol>
+
+    <h3 class="subsection-title">2.5 የእቅዱ አስፈላጊነት (Rationale)</h3>
+    <ul>
+        <li>የወረቀት አሰራርን በመቀነስ የህመምተኞችን የጥበቃ ጊዜ በእጅጉ ለማሳለጥ።</li>
+        <li>የመድኃኒት ብክነትን፣ የንብረት ስረቃን እና የፋይናንስ ስህተቶችን በዲጂታል ቁጥጥር ለመከላከል (DAGU, AMIS, IBEX, iTAP)።</li>
+        <li>የሀገር አቀፍ የጤና ሪፖርቶች (HMIS / DHIS2) በጥራት እና በወቅቱ እንዲላኩ ለማስቻል፤ የክትባት ሽፋን መረጃዎችን በዲጂታል መንገድ ለመከታተል።</li>
+        <li>የተቋሙን የሃርድዌር ሀብቶች እድሜ ለማራዘም እና መረጃዎች እንዳይጠፉ አስተማማኝ የመጠባበቂያ (Backup) ስርዓት ለመዘርጋት።</li>
+    </ul>
+
+    <!-- Section 3 & 4 -->
+    <h2 class="section-title">3. ቁልፍ ተግባራት እና የክትትል አቅጣጫ</h2>
+    <p><strong>ከውጭ ተገልጋይ አንጻር:</strong> የአገልግሎት ፍጥነትና እንግልት መቀነስ፣ የህክምና መረጃ ደህንነት መጠበቅ እና የ CCTV ካሜራዎችን 24/7 ንቁ በማድረግ ደህንነቱ የተጠበቀ ግቢ መፍጠር።</p>
+    <p><strong>ከውስጥ ተገልጋይ አንጻር:</strong> ቀልጣፋ የአይቲ እገዛ (IT Helpdesk) መስጠት፣ በስልጠና ሰራተኞችን ማበቃት እና ለአመራሩ ትክክለኛ የህክምና እና የፋይናንስ ሪፖርቶችን በወቅቱ ማቅረብ።</p>
+
+    <h2 class="section-title">4. የመሰረተ-ልማት፣ የሰርቨር እና የስልጠና መርሃ-ግብር</h2>
+    <ul>
+        <li><strong>የፋይናንስ፣ ንብረት እና HRIS:</strong> IBEX, iTAP, AMIS Portal እና HRIS/eHRIS የመረጃ ቋት እና የኔትወርክ ትስስር ማረጋገጥ።</li>
+        <li><strong>የዳታ እና ክትባት ሲስተም:</strong> DHIS2 ፖርታል እና የ EIR ዲጂታል መመዝገቢያ መሳሪያዎችን ዝግጁ ማድረግ።</li>
+        <li><strong>ፋርማሲ እና EMR:</strong> DAGU ሲስተም እና EMR/HIS አጠቃላይ ሞጁሎች ተሳስረው እንዲሰሩ መከታተል።</li>
+        <li><strong>ኔትወርክ እና ሰርቨር:</strong> የ HPE ProLiant Gen10 ሰርቨር (RAID, UEFI, Windows Server)፣ Cat6 cabling, Cisco Switches እና Hikvision CCTV ካሜራዎችን ጥገናና ክትትል ማድረግ።</li>
+        <li><strong>ስልጠና:</strong> ለሁሉም ሰራተኞች በ EMR አጠቃቀም እና በሳይበር ደህንነት (Cybersecurity Awareness) ላይ ስልጠና መስጠት።</li>
+    </ul>
+
+    <!-- Section 9: Table -->
+    <h2 class="section-title">9. የሩብ ዓመት ዝርዝር የድርጊት መርሃ ግብር (Quarterly Action Plan)</h2>
+    <table>
+        <thead>
+            <tr>
+                <th style="width: 8%;">ተ.ቁ</th>
+                <th style="width: 52%;">ዝርዝር ተግባራት እና መርሃ-ግብር</th>
+                <th style="width: 10%;">1ኛ ሩብ</th>
+                <th style="width: 10%;">2ኛ ሩብ</th>
+                <th style="width: 10%;">3ኛ ሩብ</th>
+                <th style="width: 10%;">4ኛ ሩብ</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>1</strong></td>
+                <td colspan="5"><strong>የአስተዳደር፣ ፋይናንስ፣ ንብረት እና HRIS ሲስተሞች</strong></td>
+            </tr>
+            <tr>
+                <td>1.1</td>
+                <td>የ IBEX, iTAP, AMIS Portal እና HRIS/eHRIS ሲስተም የቴክኒክ ፍተሻና የኔትወርክ ትስስር</td>
+                <td class="center">X</td>
+                <td class="center">X</td>
+                <td class="center">X</td>
+                <td class="center">X</td>
+            </tr>
+            <tr>
+                <td>1.2</td>
+                <td>ለፋይናንስ፣ ለንብረት እና ለሰው ሀብት ሰራተኞች በሲስተሞች አጠቃቀም ላይ ስልጠና መስጠት</td>
+                <td class="center">X</td>
+                <td class="center"></td>
+                <td class="center">X</td>
+                <td class="center"></td>
+            </tr>
+            <tr>
+                <td><strong>2</strong></td>
+                <td colspan="5"><strong>የዳታ (DHIS2)፣ የክትባት (EIR) እና የፋርማሲ ሲስተሞች</strong></td>
+            </tr>
+            <tr>
+                <td>2.1</td>
+                <td>የ DHIS2 ፖርታል የኢንተርኔት ትስስር የቴክኒክ ድጋፍ</td>
+                <td class="center">X</td>
+                <td class="center">X</td>
+                <td class="center">X</td>
+                <td class="center">X</td>
+            </tr>
+            <tr>
+                <td>2.2</td>
+                <td>የክትባት ክፍል ሲስተም (EIR) መሳሪያዎች ፍተሻ</td>
+                <td class="center">X</td>
+                <td class="center">X</td>
+                <td class="center">X</td>
+                <td class="center">X</td>
+            </tr>
+            <tr>
+                <td>2.3</td>
+                <td>የ DAGU ፋርማሲ ሲስተም ዝርጋታ እና ድጋፍ</td>
+                <td class="center">X</td>
+                <td class="center">X</td>
+                <td class="center">X</td>
+                <td class="center">X</td>
+            </tr>
+            <tr>
+                <td><strong>3</strong></td>
+                <td colspan="5"><strong>የኢንተርኔት፣ ዋይፋይ እና ኔትወርክ መሠረተ-ልማት</strong></td>
+            </tr>
+            <tr>
+                <td>3.1</td>
+                <td>የብሮድባንድ ኢንተርኔት እና የግቢውን የዋይፋይ Access Points ፍተሻና ማሻሻያ</td>
+                <td class="center">X</td>
+                <td class="center">X</td>
+                <td class="center">X</td>
+                <td class="center">X</td>
+            </tr>
+            <tr>
+                <td>3.2</td>
+                <td>የ Cat6 ኬብሎች፣ Cisco Switches እና የኔትወርክ ኖዶች ጥገና</td>
+                <td class="center">X</td>
+                <td class="center">X</td>
+                <td class="center">X</td>
+                <td class="center">X</td>
+            </tr>
+            <tr>
+                <td>3.3</td>
+                <td>የ HPE ProLiant Gen10 ሰርቨር ጤንነት፣ RAID Status እና የዳታ ባካፕ (Backup)</td>
+                <td class="center">X</td>
+                <td class="center">X</td>
+                <td class="center">X</td>
+                <td class="center">X</td>
+            </tr>
+            <tr>
+                <td>3.4</td>
+                <td>የ Hikvision CCTV ካሜራዎች እና NVR HDD ፍተሻና ጥገና</td>
+                <td class="center">X</td>
+                <td class="center">X</td>
+                <td class="center">X</td>
+                <td class="center">X</td>
+            </tr>
+            <tr>
+                <td>3.5</td>
+                <td>ለጠቅላላ ሰራተኞች በሳይበር ደህንነት እና መረጃ ምስጢራዊነት ላይ ስልጠና መስጠት</td>
+                <td class="center"></td>
+                <td class="center">X</td>
+                <td class="center"></td>
+                <td class="center">X</td>
+            </tr>
+            <tr>
+                <td><strong>4</strong></td>
+                <td colspan="5"><strong>የሃርድዌር ጥገና እና የሶፍትዌር ልማት</strong></td>
+            </tr>
+            <tr>
+                <td>4.1</td>
+                <td>የኮምፒውተር፣ ፕሪንተር እና ባርኮድ ስካነሮች መደበኛ ጥገና (Preventive Maint.)</td>
+                <td class="center">X</td>
+                <td class="center">X</td>
+                <td class="center">X</td>
+                <td class="center">X</td>
+            </tr>
+            <tr>
+                <td>4.2</td>
+                <td>የውስጥ አፕሊኬሽኖች (IT Helpdesk Portal, Shift Handover App) ማበጀት</td>
+                <td class="center"></td>
+                <td class="center">X</td>
+                <td class="center"></td>
+                <td class="center">X</td>
+            </tr>
+            <tr>
+                <td><strong>5</strong></td>
+                <td colspan="5"><strong>ግምገማ እና ሪፖርት አቀራረብ</strong></td>
+            </tr>
+            <tr>
+                <td>5.1</td>
+                <td>የሩብ ዓመት እና የአመቱ መጨረሻ የአይቲ አፈጻጸም ሪፖርት ማዘጋጀት</td>
+                <td class="center">X</td>
+                <td class="center">X</td>
+                <td class="center">X</td>
+                <td class="center">X</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Section 10: Signatures -->
+    <h2 class="section-title">10. ማጠቃለያ እና የማጽደቂያ ክፍል</h2>
+    <p>ይህ አመታዊ እቅድ በቤላ ጤና ጣቢያ የሚሰጡትን የህክምና፣ የክትባት፣ የፋይናንስ፣ የፋርማሲ፣ የንብረት፣ የሰው ሀብት እና የHMIS/ዳታ አገልግሎቶች በዲጂታል መንገድ በማዘመን የተቋሙን ቅልጥፍና እና የአገልግሎት ጥራት ለማሳደግ ታስቦ የተዘጋጀ ነው። እቅዱ በተቀመጠለት ጊዜና በጀት ተተግብሮ ውጤታማ እንዲሆን የተቋሙ አመራር አስፈላጊውን የቁሳቁስ እና የበጀት ድጋፍ እንዲያደርግ ይጠየቃል።</p>
+
+    <div class="approval-section">
+        <div class="signature-box">
+            <h4>እቅዱን ያዘጋጀው የአይቲ ባለሙያ</h4>
+            <p><strong>ስም:</strong> አበበ ምህረት</p>
+            <p><strong>የስራ መደብ:</strong> የአይቲ ባለሙያ (IT Specialist)</p>
+            <div class="line"></div>
+            <p style="margin-top: 5px;"><strong>ፊርማ:</strong></p>
+            <div class="line"></div>
+            <p style="margin-top: 5px;"><strong>ቀን:</strong></p>
+        </div>
+
+        <div class="signature-box">
+            <h4>እቅዱን ያጸደቀው የጤና ጣቢያው ዋና ኃላፊ</h4>
+            <p><strong>ስም:</strong> _______________________</p>
+            <p><strong>የስራ መደብ:</strong> የቤላ ጤና ጣቢያ ዋና ኃላፊ</p>
+            <div class="line"></div>
+            <p style="margin-top: 5px;"><strong>ፊርማ:</strong></p>
+            <div class="line"></div>
+            <p style="margin-top: 5px;"><strong>ቀን:</strong></p>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
